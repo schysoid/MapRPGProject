@@ -1,0 +1,3 @@
+Putting THE WAND here will attract Adventurers and Monsters you meet to this Dungeon
+(You inserted THE WAND in the pillar)
+(You removed THE WAND)

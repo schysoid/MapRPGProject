@@ -1,0 +1,27 @@
+[title=EncounterTextStart_1]
+ADVENTURER:[question=0]Would you happen to have a job for me?
+[choice] Well... There's this prophecy ...
+[choice] I'll keep an eye open
+[title=EncounterTextEnd_1]
+
+[title=EncounterTextStart_1a]
+ADVENTURER: I'll have a look at *DungeonName*. Thanks! 
+[title=EncounterTextEnd_1a]
+
+[title=EncounterTextStart_1b]
+ADVENTURER: Ok. I'll keep looking...
+[title=EncounterTextEnd_1b]
+
+[title=EncounterTextStart_2]
+MONSTER:[question=0]Would you happen to have a job for me?
+[choice] Well... There's this prophecy ...
+[choice] I'll keep an eye open
+[title=EncounterTextEnd_2]
+
+[title=EncounterTextStart_2a]
+MONSTER: I'll have a look at *DungeonName*. Thanks! 
+[title=EncounterTextEnd_2a]
+
+[title=EncounterTextStart_2b]
+MONSTER: Ok. I'll keep looking...
+[title=EncounterTextEnd_2b]
