@@ -14,7 +14,7 @@ public class TriggerEncounter : MonoBehaviour
     private float cooldown = 3f;
     public float minEncounterTimer = 2f;
     public float maxEncounterTimer = 10f;
-    public int percentChancesOfGoinInEncounter = 20; 
+    public int percentChancesOfGoinInEncounter = 20;
 
     // Use this for initialization
     void Start()
@@ -27,15 +27,30 @@ public class TriggerEncounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsCoolDownOver()==true && gameManager.playerIsMoving==true)
+        if (IsCoolDownOver() == true && gameManager.playerIsMoving == true)
         {
-            RayCastForCollisions();
+            System.Random pseudoRandom = new System.Random();
+            int rand = pseudoRandom.Next(0, 100);
+            if (rand >= (100 - percentChancesOfGoinInEncounter)) // if rand draw 
+            {
+                ForceTriggerEncounter();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            print("A key was pressed");
+            ForceTriggerEncounter();
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            print("M key was pressed");
+            ForceTriggerEncounter();
         }
     }
 
     private bool IsCoolDownOver()
     {
-        if (Time.time >= lastTime + cooldown )
+        if (Time.time >= lastTime + cooldown)
         {
             cooldown = Random.Range(minEncounterTimer, maxEncounterTimer);
             lastTime = Time.time;
@@ -50,17 +65,13 @@ public class TriggerEncounter : MonoBehaviour
 
     private void RayCastForCollisions()
     {
-        System.Random pseudoRandom = new System.Random();
-        int rand = pseudoRandom.Next(0, 100);
-
-        if (rand >= (100 - percentChancesOfGoinInEncounter)) // if rand draw 
-        {
+       
             RaycastHit2D[] hits;
-        Vector2 point = new Vector2(transform.position.x, transform.position.y);
-        hits = Physics2D.RaycastAll( point, Vector2.zero); // check raycast
+            Vector2 point = new Vector2(transform.position.x, transform.position.y);
+            hits = Physics2D.RaycastAll(point, Vector2.zero); // check raycast
 
-        if (hits.Length >0) // if got something from raycast
-        {
+            if (hits.Length > 0) // if got something from raycast
+            {
                 gameManager.EncounterType = null;
                 foreach (RaycastHit2D hit in hits)
                 {
@@ -103,11 +114,14 @@ public class TriggerEncounter : MonoBehaviour
                     if (recipient.name == "MountainsTilemap")
                         gameManager.EncounterType = "mountains";
 
-                    
-            }
-                gameManager.playerPosition = transform.position; // save player position on map
-            SceneManager.LoadScene("EncounterPlace", LoadSceneMode.Single);
+
                 }
-            }
+            gameManager.playerPosition = transform.position; // save player position on map
+            SceneManager.LoadScene("EncounterPlace", LoadSceneMode.Single);
         }
+    }
+    private void ForceTriggerEncounter() {
+        RayCastForCollisions();
+
+    }
     }

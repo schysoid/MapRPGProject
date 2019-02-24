@@ -42,7 +42,9 @@ public class GameManager : MonoBehaviour {
             DungeonsQueues[i] = new int[4];
         }
         PowerUpWordsArray = new string[20];
-        PowerUpWordsArray[0] = " is";
+        PowerUpWordsArray[0] = "WORD";
+        PowerUpWordsArray[1] = "POWER";
+        PowerUpWordsArray[2] = "FOUND";
         PowerUpWordsCountArray = new int[PowerUpWordsArray.Length];
     }
     // Use this for initialization

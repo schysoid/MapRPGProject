@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// TELLS EncounterTypeSelector WHAT TYPE TO LOAD RANDOMELY (ADVENTURER, MONSTER...)
+// TELLS EncounterTypeSelector WHAT TYPE TO LOAD RANDOMLY (ADVENTURER, MONSTER...)
 // IF ITS AN ENCOUNTER WITH NPC THEY ARE SET UP AND ALL ACCEPT TO GO TO LAST DUNGEON
 // IF ITS AN ENCOUNTER WITH MONSTER IT IS SET UP AND HE GOES TO LAST DUNGEON
 
@@ -106,6 +106,8 @@ public class EncounterGenerator : MonoBehaviour {
         }
  
     }
+   
+
    public void NpcAcceptsQuest(int npcID) {
         int dungeonToGoID  = System.Array.IndexOf(gameManager.spawnedDungeons, flaggedDungeon);
 

@@ -3,8 +3,9 @@
 --- !u!114 &1
 MonoBehaviour:
   m_ObjectHideFlags: 61
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 0001-01-01T00:00:00.000+00:00
-  initializedAtString: 0001-01-01T00:00:00.000+00:00
+  lastUpdatedAtString: 2019-02-24T16:07:40.540+01:00
+  initializedAtString: 2019-02-24T16:07:40.540+01:00
   currentGitRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/schysoid/MapRPGProject.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: 
-    tracking: 
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: 
+    name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/schysoid/MapRPGProject.git
+    trackingBranch: master
   currentConfigRemote:
-    name: 
-    url: 
-  currentHead: 
+    name: origin
+    url: https://github.com/schysoid/MapRPGProject.git
+  currentHead: 82d8519

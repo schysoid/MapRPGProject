@@ -59,6 +59,7 @@ public class Dungeon : MonoBehaviour {
 
         if (gameManager.MonstersDungeonsIds[dungeonID] > 0)
         {
+            print(" Setting SignPost Monster ID " + gameManager.MonstersDungeonsIds[dungeonID]);
             singPost.SetSignPost(gameManager.MonstersDungeonsIds[dungeonID]);
         }
         else {

@@ -88,7 +88,7 @@ public class Talk_Dialogs : MonoBehaviour
         {
             print("Choice 0");
             rpgTalk.NewTalk("EncounterTextStart_1a", "EncounterTextEnd_1a", rpgTalk.txtToParse, this, "GiveBackControls");
-            encounterGenerator.NpcAcceptsQuest(1);//
+            encounterGenerator.AllNpcAcceptQuests();
 
         }
         else if (choiceID == 1)

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapRPGProject", "Assembly-CSharp.csproj", "{2CE33D69-D36C-E4F7-9093-740D576F1D61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2CE33D69-D36C-E4F7-9093-740D576F1D61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapRPGProject", "Assembly-CSharp-firstpass.csproj", "{C9068991-5D46-740E-E3CB-19021FD8061A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{C9068991-5D46-740E-E3CB-19021FD8061A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapRPGProject", "Assembly-CSharp-Editor-firstpass.csproj", "{4056A155-9173-3D3F-23B5-0DF32A7961D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{4056A155-9173-3D3F-23B5-0DF32A7961D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapRPGProject", "Assembly-CSharp-Editor.csproj", "{5553311A-3C8E-AB93-D1DE-6A6234ED790A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{5553311A-3C8E-AB93-D1DE-6A6234ED790A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,7 +18,7 @@ public class DungeonSingPost : MonoBehaviour {
 
     public void SetSignPost(int monsterId) {
         monsterID = monsterId;
-        spriteRenderer.sprite = sprites[monsterID - 100];// we added 100 to monsters to dinstinguish them from adventurer ids
+        spriteRenderer.sprite = sprites[monsterID -100];// we added 100 to monsters to dinstinguish them from adventurer ids
 
     }
 }
